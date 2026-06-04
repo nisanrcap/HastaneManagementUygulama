@@ -5,7 +5,7 @@ Kocaeli Üniversitesi Bilişim Sistemleri Mühendisliği Bölümü - TBL331 Veri
 ---
  
 ## 1. Problem Tanımı
-Bu proje, modern bir sağlık merkezinin ihtiyaç duyduğu hasta kayıt, poliklinik randevu takibi, doktor/personel yönetimi, tahlil istek/sonuç girişi ve reçete işlemlerini dijitalleştirmek amacıyla tasarlanmıştır. Sistem, veri bütünlüğünü ve tutarlılığını gelişmiş veritabanı kuralları ile korurken; hastaların doğru poliklinikten hızlı randevu alabilmesini, doktor ve hemşirelerin koordineli çalışabilmesini sağlar.
+Bu proje, modern bir sağlık merkezinin ihtiyaç duyzada hasta kayıt, poliklinik randevu takibi, doktor/personel yönetimi, tahlil istek/sonuç girişi ve reçete işlemlerini dijitalleştirmek amacıyla tasarlanmıştır. Sistem, veri bütünlüğünü ve tutarlılığını gelişmiş veritabanı kuralları ile korurken; hastaların doğru poliklinikten hızlı randevu alabilmesini, doktor ve hemşirelerin koordineli çalışabilmesini sağlar.
  
 ---
  
@@ -29,13 +29,16 @@ Proje, katmanlı ve modüler bir mimari yapı üzerine inşa edilmiştir:
 3. **Randevu İşlemi:** Hasta randevu talep ettiğinde doktor müsaitliği ve hastanın yaşı veritabanında kontrol edilir, süreç başarılıysa kayıt tetiklenir.
  
 > **Mimarisi ve Akış Şeması Görseli:**
-> Proje dosyalarındaki ilgili şemaları inceleyebilirsiniz.
+> ![İşlem Akış Şeması](islemAkisSemasi.drawio.png)
  
 ---
  
 ## 4. Veri Tabanı Tasarımı (ER Diyagramı ve Kurallar)
  
 Veritabanı tasarımı **5N (Normalizasyon)** kurallarına tam uyumlu olarak **7 ana tablodan** oluşmaktadır. Sistemde veri bütünlüğünü sağlayan `Primary Key (PK)`, `Foreign Key (FK)`, `UNIQUE` ve `CHECK` kısıtlayıcıları eksiksiz kurgulanmıştır.
+ 
+### Veri Tabanı İlişkisel ER Diyagramı
+![ER Diyagramı](erDiyagrami.png)
  
 ### Tablo Yapıları
 1. **Hasta:** Hastaların kişisel bilgilerini, T.C. kimlik numaralarını (`CHECK` kısıtlamalı 11 haneli), adres bilgilerini ve sistem şifrelerini tutar.
