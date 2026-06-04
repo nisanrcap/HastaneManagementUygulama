@@ -38,7 +38,7 @@ Proje, katmanlı ve modüler bir mimari yapı üzerine inşa edilmiştir:
 Veritabanı tasarımı **5N (Normalizasyon)** kurallarına tam uyumlu olarak **7 ana tablodan** oluşmaktadır. Sistemde veri bütünlüğünü sağlayan `Primary Key (PK)`, `Foreign Key (FK)`, `UNIQUE` ve `CHECK` kısıtlayıcıları eksiksiz kurgulanmıştır.
  
 ### Veri Tabanı İlişkisel ER Diyagramı
-![ER Diyagramı](frontend/Hastane_Otomasyonu/resim/erDiyagrami.png)
+![ER Diyagramı](frontend/Hastane_Otomasyonu/resim/ER_diyagrami.png)
  
 ### Tablo Yapıları
 1. **Hasta:** Hastaların kişisel bilgilerini, T.C. kimlik numaralarını (`CHECK` kısıtlamalı 11 haneli), adres bilgilerini ve sistem şifrelerini tutar.
